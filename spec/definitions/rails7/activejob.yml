@@ -5,8 +5,16 @@ ActiveJob::Base.after_enqueue:
   skip: true
 ActiveJob::Base.after_perform:
   types:
-  - undefined
-  skip: true
+  - void
+  skip: false
+ActiveJob::Base.alias_attribute:
+  types:
+  - "::Boolean"
+  skip: false
+ActiveJob::Base.anonymous?:
+  types:
+  - "::Boolean"
+  skip: false
 ActiveJob::Base.anonymous?:
   types:
   - undefined
@@ -21,7 +29,7 @@ ActiveJob::Base.around_perform:
   skip: true
 ActiveJob::Base.attr_internal:
   types:
-  - undefined
+  - void
   skip: false
 ActiveJob::Base.attr_internal_accessor:
   types:
