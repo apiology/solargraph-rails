@@ -27,7 +27,7 @@ module Solargraph
         end
         comments << "\n@return [#{types.join(',')}]" if types
 
-        opts[:comments] ||= comments
+        opts[:comments] ||= comments.join("\n")
 
         m = Solargraph::Pin::Method.new(**opts)
         parameters = params.map do |name, type|
