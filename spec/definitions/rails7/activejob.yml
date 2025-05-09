@@ -1,56 +1,52 @@
 ---
 ActiveJob::Base.after_enqueue:
   types:
-  - undefined
-  skip: true
+  - void
+  skip: false
 ActiveJob::Base.after_perform:
   types:
   - void
   skip: false
 ActiveJob::Base.alias_attribute:
   types:
-  - "::Boolean"
-  skip: false
-ActiveJob::Base.anonymous?:
-  types:
-  - "::Boolean"
-  skip: false
-ActiveJob::Base.anonymous?:
-  types:
   - undefined
+  skip: false
+ActiveJob::Base.anonymous?:
+  types:
+  - "::Boolean"
   skip: false
 ActiveJob::Base.around_enqueue:
   types:
-  - undefined
-  skip: true
+  - void
+  skip: false
 ActiveJob::Base.around_perform:
   types:
-  - undefined
-  skip: true
+  - void
+  skip: false
 ActiveJob::Base.attr_internal:
   types:
   - void
   skip: false
 ActiveJob::Base.attr_internal_accessor:
   types:
-  - undefined
+  - void
   skip: false
 ActiveJob::Base.attr_internal_reader:
   types:
-  - undefined
+  - void
   skip: false
 ActiveJob::Base.attr_internal_writer:
   types:
-  - undefined
+  - void
   skip: false
 ActiveJob::Base.before_enqueue:
   types:
-  - undefined
-  skip: true
+  - void
+  skip: false
 ActiveJob::Base.before_perform:
   types:
-  - undefined
-  skip: true
+  - void
+  skip: false
 ActiveJob::Base.default_priority:
   types:
   - undefined
@@ -86,19 +82,19 @@ ActiveJob::Base.descendants:
 ActiveJob::Base.deserialize:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveJob::Base.direct_descendants:
   types:
   - undefined
   skip: true
 ActiveJob::Base.discard_on:
   types:
-  - undefined
-  skip: true
+  - void
+  skip: false
 ActiveJob::Base.execute:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveJob::Base.handler_for_rescue:
   types:
   - undefined
@@ -130,11 +126,11 @@ ActiveJob::Base.normalize_callback_params:
 ActiveJob::Base.perform_later:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveJob::Base.perform_now:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveJob::Base.priority:
   types:
   - undefined
@@ -150,19 +146,19 @@ ActiveJob::Base.priority?:
 ActiveJob::Base.queue_adapter:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveJob::Base.queue_adapter=:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveJob::Base.queue_adapter_name:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveJob::Base.queue_as:
   types:
-  - undefined
-  skip: true
+  - void
+  skip: false
 ActiveJob::Base.queue_name:
   types:
   - undefined
@@ -190,7 +186,7 @@ ActiveJob::Base.queue_name_delimiter?:
 ActiveJob::Base.queue_name_from_part:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveJob::Base.queue_name_prefix:
   types:
   - undefined
@@ -205,8 +201,8 @@ ActiveJob::Base.queue_name_prefix?:
   skip: true
 ActiveJob::Base.queue_with_priority:
   types:
-  - undefined
-  skip: true
+  - void
+  skip: false
 ActiveJob::Base.rescue_from:
   types:
   - undefined
@@ -241,8 +237,8 @@ ActiveJob::Base.retry_jitter=:
   skip: true
 ActiveJob::Base.retry_on:
   types:
-  - undefined
-  skip: true
+  - void
+  skip: false
 ActiveJob::Base.return_false_on_aborted_enqueue:
   types:
   - undefined
@@ -253,8 +249,8 @@ ActiveJob::Base.return_false_on_aborted_enqueue=:
   skip: true
 ActiveJob::Base.set:
   types:
-  - undefined
-  skip: true
+  - "::ActiveJob::ConfiguredJob"
+  skip: false
 ActiveJob::Base.set_callback:
   types:
   - undefined
@@ -429,7 +425,7 @@ ActiveJob::Base#scheduled_at=:
   skip: false
 ActiveJob::Base#serialize:
   types:
-  - undefined
+  - "::Hash<::String>"
   skip: false
 ActiveJob::Base#serialized_arguments=:
   types:
@@ -461,7 +457,7 @@ ActiveJob::Base#to_param:
   skip: false
 ActiveJob::Base#to_query:
   types:
-  - undefined
+  - "::String"
   skip: false
 ActiveJob::Base#try:
   types:

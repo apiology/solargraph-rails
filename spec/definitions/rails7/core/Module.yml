@@ -33,11 +33,11 @@ Module.attr_internal_naming_format=:
   skip: false
 Module.attr_internal_reader:
   types:
-  - undefined
+  - void
   skip: false
 Module.attr_internal_writer:
   types:
-  - undefined
+  - void
   skip: false
 Module.blank?:
   types:
@@ -291,15 +291,15 @@ Module#deprecate:
   skip: false
 Module#duplicable?:
   types:
-  - undefined
+  - 'true'
   skip: false
 Module#html_safe?:
   types:
-  - undefined
+  - 'false'
   skip: false
 Module#in?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 Module#instance_values:
   types:
@@ -339,16 +339,17 @@ Module#module_parents:
   skip: false
 Module#presence:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 Module#presence_in:
   types:
-  - Object
+  - nil
+  - self
   skip: false
 Module#present?:
   types:
-  - 'true'
-  - 'false'
+  - "::Boolean"
   skip: false
 Module#redefine_method:
   types:

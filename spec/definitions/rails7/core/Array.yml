@@ -212,11 +212,12 @@ Array.with_options:
   skip: false
 Array.wrap:
   types:
-  - undefined
+  - "::Array"
+  - "::Array<generic<T>>"
   skip: false
 Array#compact_blank!:
   types:
-  - undefined
+  - "::Array<generic<Elem>>"
   skip: false
 Array#extract!:
   types:
@@ -256,7 +257,7 @@ Array#including:
   skip: false
 Array#inquiry:
   types:
-  - undefined
+  - "::ActiveSupport::ArrayInquirer<generic<Elem>>"
   skip: false
 Array#second:
   types:
