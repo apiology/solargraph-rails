@@ -1,24 +1,20 @@
 ---
-ActiveRecord::Base.===:
-  types:
-  - "::Boolean"
-  skip: false
 ActiveRecord::Base.abstract_class:
   types:
   - undefined
   skip: false
 ActiveRecord::Base.abstract_class=:
   types:
-  - void
+  - undefined
   skip: false
 ActiveRecord::Base.abstract_class?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base.accepts_nested_attributes_for:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.action_on_strict_loading_violation:
   types:
   - undefined
@@ -29,80 +25,76 @@ ActiveRecord::Base.action_on_strict_loading_violation=:
   skip: true
 ActiveRecord::Base.acts_like?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base.after_commit:
   types:
-  - void
+  - undefined
   skip: false
 ActiveRecord::Base.after_create:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.after_create_commit:
   types:
-  - void
+  - undefined
   skip: false
 ActiveRecord::Base.after_destroy:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.after_destroy_commit:
   types:
-  - void
+  - undefined
   skip: false
 ActiveRecord::Base.after_find:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.after_initialize:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.after_rollback:
   types:
-  - void
+  - undefined
   skip: false
 ActiveRecord::Base.after_save:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.after_save_commit:
   types:
-  - void
+  - undefined
   skip: false
 ActiveRecord::Base.after_touch:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.after_update:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.after_update_commit:
   types:
-  - void
+  - undefined
   skip: false
 ActiveRecord::Base.after_validation:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.aggregate_reflections:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.aggregate_reflections=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.aggregate_reflections?:
   types:
-  - "::Boolean"
-  skip: false
-ActiveRecord::Base.alias_attribute:
-  types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.all:
   types:
   - undefined
@@ -110,7 +102,7 @@ ActiveRecord::Base.all:
 ActiveRecord::Base.all_timestamp_attributes_in_model:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.and:
   types:
   - undefined
@@ -121,12 +113,12 @@ ActiveRecord::Base.annotate:
   skip: false
 ActiveRecord::Base.anonymous?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base.any?:
   types:
-  - undefined
-  skip: true
+  - Boolean
+  skip: false
 ActiveRecord::Base.application_record_class:
   types:
   - undefined
@@ -141,24 +133,24 @@ ActiveRecord::Base.application_record_class?:
   skip: true
 ActiveRecord::Base.arel_table:
   types:
-  - "::Arel::Table"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.around_create:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.around_destroy:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.around_save:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.around_update:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.as_json:
   types:
   - undefined
@@ -189,76 +181,76 @@ ActiveRecord::Base.attr_internal:
   skip: false
 ActiveRecord::Base.attr_internal_accessor:
   types:
-  - void
+  - undefined
   skip: false
 ActiveRecord::Base.attr_internal_reader:
   types:
-  - void
+  - undefined
   skip: false
 ActiveRecord::Base.attr_internal_writer:
   types:
-  - void
+  - undefined
   skip: false
 ActiveRecord::Base.attr_readonly:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.attribute:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.attribute_alias:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.attribute_alias?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.attribute_aliases:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.attribute_aliases=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.attribute_aliases?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.attribute_method?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.attribute_method_affix:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.attribute_method_matchers:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.attribute_method_matchers=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.attribute_method_matchers?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.attribute_method_prefix:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.attribute_method_suffix:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.attribute_names:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.attribute_types:
   types:
   - undefined
@@ -294,14 +286,14 @@ ActiveRecord::Base.automatic_scope_inversing?:
 ActiveRecord::Base.average:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.base_class:
   types:
   - undefined
   skip: false
 ActiveRecord::Base.base_class?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base.before_commit:
   types:
@@ -309,31 +301,31 @@ ActiveRecord::Base.before_commit:
   skip: false
 ActiveRecord::Base.before_create:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.before_destroy:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.before_remove_const:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.before_save:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.before_update:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.before_validation:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.belongs_to:
   types:
-  - void
+  - undefined
   skip: false
 ActiveRecord::Base.belongs_to_required_by_default:
   types:
@@ -353,7 +345,8 @@ ActiveRecord::Base.benchmark:
   skip: false
 ActiveRecord::Base.blank?:
   types:
-  - "::Boolean"
+  - 'true'
+  - 'false'
   skip: false
 ActiveRecord::Base.cache:
   types:
@@ -362,35 +355,35 @@ ActiveRecord::Base.cache:
 ActiveRecord::Base.cache_timestamp_format:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.cache_timestamp_format=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.cache_timestamp_format?:
-  types:
-  - "::Boolean"
-  skip: false
-ActiveRecord::Base.cache_versioning:
-  types:
-  - undefined
-  skip: false
-ActiveRecord::Base.cache_versioning=:
-  types:
-  - undefined
-  skip: false
-ActiveRecord::Base.cache_versioning?:
-  types:
-  - "::Boolean"
-  skip: false
-ActiveRecord::Base.cached_find_by_statement:
-  types:
-  - undefined
-  skip: false
-ActiveRecord::Base.calculate:
   types:
   - undefined
   skip: true
+ActiveRecord::Base.cache_versioning:
+  types:
+  - undefined
+  skip: true
+ActiveRecord::Base.cache_versioning=:
+  types:
+  - undefined
+  skip: true
+ActiveRecord::Base.cache_versioning?:
+  types:
+  - undefined
+  skip: true
+ActiveRecord::Base.cached_find_by_statement:
+  types:
+  - undefined
+  skip: true
+ActiveRecord::Base.calculate:
+  types:
+  - undefined
+  skip: false
 ActiveRecord::Base.cattr_accessor:
   types:
   - undefined
@@ -426,7 +419,7 @@ ActiveRecord::Base.clear_query_caches_for_current_thread:
 ActiveRecord::Base.clear_reflections_cache:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.clear_reloadable_connections!:
   types:
   - undefined
@@ -434,7 +427,7 @@ ActiveRecord::Base.clear_reloadable_connections!:
 ActiveRecord::Base.clear_validators!:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.collecting_queries_for_explain:
   types:
   - undefined
@@ -442,19 +435,19 @@ ActiveRecord::Base.collecting_queries_for_explain:
 ActiveRecord::Base.collection_cache_key:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.collection_cache_versioning:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.collection_cache_versioning=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.collection_cache_versioning?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.column_defaults:
   types:
   - undefined
@@ -469,7 +462,7 @@ ActiveRecord::Base.column_names:
   skip: false
 ActiveRecord::Base.columns:
   types:
-  - "::Array"
+  - undefined
   skip: false
 ActiveRecord::Base.columns_hash:
   types:
@@ -501,7 +494,7 @@ ActiveRecord::Base.configurations=:
   skip: true
 ActiveRecord::Base.connected?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base.connected_to:
   types:
@@ -509,7 +502,7 @@ ActiveRecord::Base.connected_to:
   skip: false
 ActiveRecord::Base.connected_to?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base.connected_to_many:
   types:
@@ -577,7 +570,7 @@ ActiveRecord::Base.connection_specification_name=:
   skip: false
 ActiveRecord::Base.connects_to:
   types:
-  - "::Array<::ActiveRecord::ConnectionAdapters::ConnectionPool>"
+  - undefined
   skip: false
 ActiveRecord::Base.content_columns:
   types:
@@ -586,19 +579,19 @@ ActiveRecord::Base.content_columns:
 ActiveRecord::Base.count:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.count_by_sql:
   types:
   - undefined
   skip: false
 ActiveRecord::Base.create:
   types:
-  - self
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.create!:
   types:
-  - self
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.create_or_find_by:
   types:
   - undefined
@@ -618,15 +611,15 @@ ActiveRecord::Base.current_preventing_writes:
 ActiveRecord::Base.current_role:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.current_scope:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.current_scope=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.current_shard:
   types:
   - undefined
@@ -634,19 +627,19 @@ ActiveRecord::Base.current_shard:
 ActiveRecord::Base.current_time_from_proper_timezone:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.dangerous_attribute_method?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.dangerous_class_method?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.decrement_counter:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.deep_dup:
   types:
   - undefined
@@ -654,15 +647,15 @@ ActiveRecord::Base.deep_dup:
 ActiveRecord::Base.default_connection_handler:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.default_connection_handler=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.default_connection_handler?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.default_extensions:
   types:
   - undefined
@@ -682,11 +675,11 @@ ActiveRecord::Base.default_role?:
 ActiveRecord::Base.default_scope_override:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.default_scope_override=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.default_scoped:
   types:
   - undefined
@@ -694,15 +687,15 @@ ActiveRecord::Base.default_scoped:
 ActiveRecord::Base.default_scopes:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.default_scopes=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.default_scopes?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.default_shard:
   types:
   - undefined
@@ -726,19 +719,19 @@ ActiveRecord::Base.default_timezone=:
 ActiveRecord::Base.define_attribute:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.define_attribute_method:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.define_attribute_methods:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.define_callbacks:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.define_model_callbacks:
   types:
   - undefined
@@ -746,15 +739,15 @@ ActiveRecord::Base.define_model_callbacks:
 ActiveRecord::Base.defined_enums:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.defined_enums=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.defined_enums?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.delegate:
   types:
   - undefined
@@ -770,7 +763,7 @@ ActiveRecord::Base.delegated_type:
 ActiveRecord::Base.delete:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.delete_all:
   types:
   - undefined
@@ -789,12 +782,12 @@ ActiveRecord::Base.descendants:
   skip: false
 ActiveRecord::Base.descends_from_active_record?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base.destroy:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.destroy_all:
   types:
   - undefined
@@ -814,7 +807,7 @@ ActiveRecord::Base.destroy_by:
 ActiveRecord::Base.deterministic_encrypted_attributes:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.direct_descendants:
   types:
   - undefined
@@ -822,7 +815,7 @@ ActiveRecord::Base.direct_descendants:
 ActiveRecord::Base.disallow_raw_sql!:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.distinct:
   types:
   - undefined
@@ -845,11 +838,11 @@ ActiveRecord::Base.dump_schemas=:
   skip: true
 ActiveRecord::Base.dup:
   types:
-  - self
+  - undefined
   skip: false
 ActiveRecord::Base.duplicable?:
   types:
-  - 'true'
+  - undefined
   skip: false
 ActiveRecord::Base.eager_load:
   types:
@@ -870,10 +863,10 @@ ActiveRecord::Base.encrypted_attributes?:
 ActiveRecord::Base.encrypts:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.enum:
   types:
-  - void
+  - undefined
   skip: false
 ActiveRecord::Base.enumerate_columns_in_select_statements:
   types:
@@ -913,7 +906,7 @@ ActiveRecord::Base.exec_explain:
   skip: false
 ActiveRecord::Base.exists?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base.extending:
   types:
@@ -934,19 +927,13 @@ ActiveRecord::Base.fifth!:
 ActiveRecord::Base.filter_attributes:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.filter_attributes=:
   types:
   - undefined
-  skip: false
-ActiveRecord::Base.find:
-  types:
-  - "::Array<self>"
-  - self
-  skip: false
+  skip: true
 ActiveRecord::Base.find_by:
   types:
-  - nil
   - self
   skip: false
 ActiveRecord::Base.find_by!:
@@ -960,11 +947,11 @@ ActiveRecord::Base.find_by_sql:
 ActiveRecord::Base.find_each:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.find_in_batches:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.find_or_create_by:
   types:
   - undefined
@@ -991,7 +978,7 @@ ActiveRecord::Base.find_sole_by:
   skip: false
 ActiveRecord::Base.finder_needs_type_condition?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base.first:
   types:
@@ -1056,23 +1043,23 @@ ActiveRecord::Base.generate_relation_method:
 ActiveRecord::Base.generate_unique_secure_token:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.generated_association_methods:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.get_primary_key:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.global_current_scope:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.global_current_scope=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.group:
   types:
   - undefined
@@ -1083,16 +1070,16 @@ ActiveRecord::Base.has_and_belongs_to_many:
   skip: false
 ActiveRecord::Base.has_attribute?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.has_many:
   types:
-  - void
+  - undefined
   skip: false
 ActiveRecord::Base.has_many_attached:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.has_many_inversing:
   types:
   - undefined
@@ -1107,31 +1094,31 @@ ActiveRecord::Base.has_many_inversing?:
   skip: true
 ActiveRecord::Base.has_one:
   types:
-  - void
+  - undefined
   skip: false
 ActiveRecord::Base.has_one_attached:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.has_rich_text:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.has_secure_password:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.has_secure_token:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.having:
   types:
   - undefined
   skip: false
 ActiveRecord::Base.html_safe?:
   types:
-  - 'false'
+  - undefined
   skip: false
 ActiveRecord::Base.human_attribute_name:
   types:
@@ -1139,12 +1126,12 @@ ActiveRecord::Base.human_attribute_name:
   skip: false
 ActiveRecord::Base.i18n_scope:
   types:
-  - ":activerecord"
+  - undefined
   skip: false
 ActiveRecord::Base.ids:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.ignored_columns:
   types:
   - undefined
@@ -1168,23 +1155,23 @@ ActiveRecord::Base.immutable_strings_by_default?:
 ActiveRecord::Base.implicit_order_column:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.implicit_order_column=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.implicit_order_column?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.in?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base.in_batches:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.in_order_of:
   types:
   - undefined
@@ -1192,15 +1179,15 @@ ActiveRecord::Base.in_order_of:
 ActiveRecord::Base.include_root_in_json:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.include_root_in_json=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.include_root_in_json?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.includes:
   types:
   - undefined
@@ -1208,7 +1195,7 @@ ActiveRecord::Base.includes:
 ActiveRecord::Base.increment_counter:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.index_nested_attribute_errors:
   types:
   - undefined
@@ -1220,11 +1207,11 @@ ActiveRecord::Base.index_nested_attribute_errors=:
 ActiveRecord::Base.inheritance_column:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.inheritance_column=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.inheritance_column?:
   types:
   - undefined
@@ -1236,11 +1223,11 @@ ActiveRecord::Base.inherited:
 ActiveRecord::Base.initialize_find_by_cache:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.initialize_generated_modules:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.initialize_relation_delegate_cache:
   types:
   - undefined
@@ -1248,31 +1235,31 @@ ActiveRecord::Base.initialize_relation_delegate_cache:
 ActiveRecord::Base.insert:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.insert!:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.insert_all:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.insert_all!:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.inspect:
   types:
-  - "::String"
+  - String
   skip: false
 ActiveRecord::Base.inspection_filter:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.instance_method_already_implemented?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.instance_values:
   types:
   - undefined
@@ -1284,19 +1271,19 @@ ActiveRecord::Base.instance_variable_names:
 ActiveRecord::Base.instantiate:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.internal_metadata_table_name:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.internal_metadata_table_name=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.internal_metadata_table_name?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.invert_where:
   types:
   - undefined
@@ -1348,27 +1335,27 @@ ActiveRecord::Base.lock:
 ActiveRecord::Base.lock_optimistically:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.lock_optimistically=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.lock_optimistically?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.locking_column:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.locking_column=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.locking_enabled?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.logger:
   types:
   - undefined
@@ -1400,31 +1387,19 @@ ActiveRecord::Base.maintain_test_schema=:
 ActiveRecord::Base.many?:
   types:
   - undefined
-  skip: true
-ActiveRecord::Base.mattr_accessor:
-  types:
-  - undefined
-  skip: false
-ActiveRecord::Base.mattr_reader:
-  types:
-  - undefined
-  skip: false
-ActiveRecord::Base.mattr_writer:
-  types:
-  - undefined
   skip: false
 ActiveRecord::Base.maximum:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.merge:
   types:
   - undefined
   skip: true
 ActiveRecord::Base.method_defined_within?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.method_visibility:
   types:
   - undefined
@@ -1432,7 +1407,7 @@ ActiveRecord::Base.method_visibility:
 ActiveRecord::Base.minimum:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.model_name:
   types:
   - undefined
@@ -1452,18 +1427,18 @@ ActiveRecord::Base.module_parents:
 ActiveRecord::Base.nested_attributes_options:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.nested_attributes_options=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.nested_attributes_options?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.new:
   types:
-  - self
+  - undefined
   skip: false
 ActiveRecord::Base.next_sequence_value:
   types:
@@ -1472,27 +1447,27 @@ ActiveRecord::Base.next_sequence_value:
 ActiveRecord::Base.no_touching:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.none:
   types:
   - undefined
   skip: false
 ActiveRecord::Base.none?:
   types:
-  - undefined
-  skip: true
+  - Boolean
+  skip: false
 ActiveRecord::Base.normalize_callback_params:
   types:
-  - "::Array"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.offset:
   types:
   - undefined
   skip: false
 ActiveRecord::Base.one?:
   types:
-  - undefined
-  skip: true
+  - Boolean
+  skip: false
 ActiveRecord::Base.only:
   types:
   - undefined
@@ -1536,35 +1511,35 @@ ActiveRecord::Base.partial_updates?:
 ActiveRecord::Base.partial_writes:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.partial_writes=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.partial_writes?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.pick:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.pluck:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.pluralize_table_names:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.pluralize_table_names=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.pluralize_table_names?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.polymorphic_class_for:
   types:
   - undefined
@@ -1576,10 +1551,10 @@ ActiveRecord::Base.polymorphic_name:
 ActiveRecord::Base.predicate_builder:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.prefetch_primary_key?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base.preload:
   types:
@@ -1587,34 +1562,33 @@ ActiveRecord::Base.preload:
   skip: false
 ActiveRecord::Base.presence:
   types:
-  - nil
-  - self
+  - Object
   skip: false
 ActiveRecord::Base.presence_in:
   types:
-  - nil
-  - self
+  - Object
   skip: false
 ActiveRecord::Base.present?:
   types:
-  - "::Boolean"
+  - 'true'
+  - 'false'
   skip: false
 ActiveRecord::Base.primary_abstract_class:
   types:
-  - void
+  - undefined
   skip: false
 ActiveRecord::Base.primary_class?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base.primary_key:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.primary_key=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.primary_key_prefix_type:
   types:
   - undefined
@@ -1639,10 +1613,6 @@ ActiveRecord::Base.protected_environments=:
   types:
   - undefined
   skip: false
-ActiveRecord::Base.pry:
-  types:
-  - undefined
-  skip: false
 ActiveRecord::Base.queues:
   types:
   - undefined
@@ -1654,12 +1624,8 @@ ActiveRecord::Base.queues=:
 ActiveRecord::Base.quoted_primary_key:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.quoted_table_name:
-  types:
-  - undefined
-  skip: false
-ActiveRecord::Base.rake_extension:
   types:
   - undefined
   skip: false
@@ -1677,12 +1643,12 @@ ActiveRecord::Base.readonly:
   skip: false
 ActiveRecord::Base.readonly_attribute?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.readonly_attributes:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.real_inheritance_column=:
   types:
   - undefined
@@ -1690,15 +1656,15 @@ ActiveRecord::Base.real_inheritance_column=:
 ActiveRecord::Base.record_timestamps:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.record_timestamps=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.record_timestamps?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.redefine_method:
   types:
   - undefined
@@ -1714,37 +1680,35 @@ ActiveRecord::Base.references:
 ActiveRecord::Base.reflect_on_aggregation:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.reflect_on_all_aggregations:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.reflect_on_all_associations:
   types:
-  - "::Array"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.reflect_on_all_attachments:
   types:
-  - "::Array<::ActiveStorage::Reflection::HasOneAttachedReflection, ::ActiveStorage::Reflection::HasManyAttachedReflection>"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.reflect_on_all_autosave_associations:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.reflect_on_association:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.reflect_on_attachment:
   types:
-  - "::ActiveStorage::Reflection::HasManyAttachedReflection"
-  - "::ActiveStorage::Reflection::HasOneAttachedReflection"
-  - nil
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.reflections:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.relation_delegate_class:
   types:
   - undefined
@@ -1765,10 +1729,6 @@ ActiveRecord::Base.reorder:
   types:
   - undefined
   skip: false
-ActiveRecord::Base.require_dependency:
-  types:
-  - undefined
-  skip: false
 ActiveRecord::Base.reselect:
   types:
   - undefined
@@ -1776,23 +1736,23 @@ ActiveRecord::Base.reselect:
 ActiveRecord::Base.reset_callbacks:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.reset_column_information:
   types:
   - undefined
   skip: false
 ActiveRecord::Base.reset_counters:
   types:
-  - 'true'
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.reset_locking_column:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.reset_primary_key:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.reset_sequence_name:
   types:
   - undefined
@@ -1811,37 +1771,36 @@ ActiveRecord::Base.rewhere:
   skip: false
 ActiveRecord::Base.rich_text_association_names:
   types:
-  - "::Array<::String>"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.sanitize_sql:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.sanitize_sql_array:
   types:
-  - "::String"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.sanitize_sql_for_assignment:
   types:
-  - "::String"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.sanitize_sql_for_conditions:
   types:
-  - "::String"
-  - nil
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.sanitize_sql_for_order:
   types:
-  - "::String"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.sanitize_sql_hash_for_assignment:
   types:
-  - "::String"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.sanitize_sql_like:
   types:
-  - "::String"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.schema_format:
   types:
   - undefined
@@ -1853,27 +1812,27 @@ ActiveRecord::Base.schema_format=:
 ActiveRecord::Base.schema_migrations_table_name:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.schema_migrations_table_name=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.schema_migrations_table_name?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.scope:
   types:
-  - void
+  - undefined
   skip: false
 ActiveRecord::Base.scope_attributes:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.scope_attributes?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.scope_for_association:
   types:
   - undefined
@@ -1881,7 +1840,7 @@ ActiveRecord::Base.scope_for_association:
 ActiveRecord::Base.scope_registry:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.second:
   types:
   - undefined
@@ -1900,7 +1859,7 @@ ActiveRecord::Base.second_to_last!:
   skip: false
 ActiveRecord::Base.select:
   types:
-  - "::Array<::String>"
+  - undefined
   skip: false
 ActiveRecord::Base.sequence_name:
   types:
@@ -1913,11 +1872,11 @@ ActiveRecord::Base.sequence_name=:
 ActiveRecord::Base.serialize:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.set_callback:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.shard_selector:
   types:
   - undefined
@@ -1932,7 +1891,7 @@ ActiveRecord::Base.shard_selector?:
   skip: true
 ActiveRecord::Base.shard_swapping_prohibited?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base.signed_id_verifier:
   types:
@@ -1961,19 +1920,19 @@ ActiveRecord::Base.silence_redefinition_of_method:
 ActiveRecord::Base.skip_callback:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.skip_time_zone_conversion_for_attributes:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.skip_time_zone_conversion_for_attributes=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.skip_time_zone_conversion_for_attributes?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.sole:
   types:
   - undefined
@@ -1981,7 +1940,7 @@ ActiveRecord::Base.sole:
 ActiveRecord::Base.source_attribute_from_preserved_attribute:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.sqlite3_connection:
   types:
   - undefined
@@ -1997,11 +1956,11 @@ ActiveRecord::Base.sti_name:
 ActiveRecord::Base.store:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.store_accessor:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.store_full_class_name:
   types:
   - undefined
@@ -2017,19 +1976,19 @@ ActiveRecord::Base.store_full_class_name?:
 ActiveRecord::Base.store_full_sti_class:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.store_full_sti_class=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.store_full_sti_class?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.stored_attributes:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.strict_loading:
   types:
   - undefined
@@ -2052,16 +2011,16 @@ ActiveRecord::Base.strict_loading_violation!:
   skip: true
 ActiveRecord::Base.subclasses:
   types:
-  - "::Array<::Class>"
+  - undefined
   skip: false
 ActiveRecord::Base.sum:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.suppress:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.suppress_multiple_database_warning:
   types:
   - undefined
@@ -2076,7 +2035,7 @@ ActiveRecord::Base.symbol_column_to_string:
   skip: false
 ActiveRecord::Base.table_exists?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base.table_name:
   types:
@@ -2089,27 +2048,27 @@ ActiveRecord::Base.table_name=:
 ActiveRecord::Base.table_name_prefix:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.table_name_prefix=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.table_name_prefix?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.table_name_suffix:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.table_name_suffix=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.table_name_suffix?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.take:
   types:
   - undefined
@@ -2134,30 +2093,6 @@ ActiveRecord::Base.third_to_last!:
   types:
   - undefined
   skip: false
-ActiveRecord::Base.thread_cattr_accessor:
-  types:
-  - undefined
-  skip: false
-ActiveRecord::Base.thread_cattr_reader:
-  types:
-  - undefined
-  skip: false
-ActiveRecord::Base.thread_cattr_writer:
-  types:
-  - undefined
-  skip: false
-ActiveRecord::Base.thread_mattr_accessor:
-  types:
-  - undefined
-  skip: false
-ActiveRecord::Base.thread_mattr_reader:
-  types:
-  - undefined
-  skip: false
-ActiveRecord::Base.thread_mattr_writer:
-  types:
-  - undefined
-  skip: false
 ActiveRecord::Base.time_zone_aware_attributes:
   types:
   - undefined
@@ -2173,23 +2108,23 @@ ActiveRecord::Base.time_zone_aware_attributes?:
 ActiveRecord::Base.time_zone_aware_types:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.time_zone_aware_types=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.time_zone_aware_types?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.timestamp_attributes_for_create_in_model:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.timestamp_attributes_for_update_in_model:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.timestamped_migrations:
   types:
   - undefined
@@ -2212,7 +2147,7 @@ ActiveRecord::Base.to_param:
   skip: false
 ActiveRecord::Base.to_query:
   types:
-  - "::String"
+  - undefined
   skip: false
 ActiveRecord::Base.touch_all:
   types:
@@ -2221,10 +2156,10 @@ ActiveRecord::Base.touch_all:
 ActiveRecord::Base.touch_attributes_with_time:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.transaction:
   types:
-  - generic<T>
+  - undefined
   skip: false
 ActiveRecord::Base.try:
   types:
@@ -2236,8 +2171,8 @@ ActiveRecord::Base.try!:
   skip: false
 ActiveRecord::Base.type_caster:
   types:
-  - "::ActiveRecord::TypeCaster::Map"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.type_for_attribute:
   types:
   - undefined
@@ -2249,7 +2184,7 @@ ActiveRecord::Base.uncached:
 ActiveRecord::Base.undefine_attribute_methods:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.unscope:
   types:
   - undefined
@@ -2257,15 +2192,15 @@ ActiveRecord::Base.unscope:
 ActiveRecord::Base.unscoped:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.update:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.update!:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.update_all:
   types:
   - undefined
@@ -2273,31 +2208,31 @@ ActiveRecord::Base.update_all:
 ActiveRecord::Base.update_counters:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.upsert:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.upsert_all:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.validate:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.validates:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.validates!:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.validates_absence_of:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.validates_acceptance_of:
   types:
   - undefined
@@ -2305,7 +2240,7 @@ ActiveRecord::Base.validates_acceptance_of:
 ActiveRecord::Base.validates_associated:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.validates_comparison_of:
   types:
   - undefined
@@ -2316,8 +2251,8 @@ ActiveRecord::Base.validates_confirmation_of:
   skip: true
 ActiveRecord::Base.validates_each:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base.validates_exclusion_of:
   types:
   - undefined
@@ -2333,35 +2268,35 @@ ActiveRecord::Base.validates_inclusion_of:
 ActiveRecord::Base.validates_length_of:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.validates_numericality_of:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.validates_presence_of:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.validates_size_of:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.validates_uniqueness_of:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.validates_with:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.validators:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.validators_on:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.verbose_query_logs:
   types:
   - undefined
@@ -2380,8 +2315,6 @@ ActiveRecord::Base.warn_on_records_fetched_greater_than=:
   skip: true
 ActiveRecord::Base.where:
   types:
-  - "::ActiveRecord::QueryMethods::WhereChain"
-  - "::ActiveRecord::Relation"
   - self
   skip: false
 ActiveRecord::Base.while_preventing_writes:
@@ -2391,7 +2324,7 @@ ActiveRecord::Base.while_preventing_writes:
 ActiveRecord::Base.with_all_rich_text:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base.with_options:
   types:
   - undefined
@@ -2414,12 +2347,11 @@ ActiveRecord::Base.yaml_encoder:
   skip: false
 ActiveRecord::Base#<=>:
   types:
-  - '0'
-  - nil
+  - undefined
   skip: false
 ActiveRecord::Base#==:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base#[]:
   types:
@@ -2435,16 +2367,16 @@ ActiveRecord::Base#accessed_fields:
   skip: false
 ActiveRecord::Base#acts_like?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base#aggregate_reflections:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#aggregate_reflections?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base#as_json:
   types:
   - undefined
@@ -2459,16 +2391,16 @@ ActiveRecord::Base#association:
   skip: false
 ActiveRecord::Base#association_cached?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base#attachment_changes:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base#attachment_reflections:
   types:
-  - "::Hash{::String => ::ActiveStorage::Reflection::HasOneAttachedReflection, ::ActiveStorage::Reflection::HasManyAttachedReflection}"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base#attachment_reflections?:
   types:
   - undefined
@@ -2476,27 +2408,27 @@ ActiveRecord::Base#attachment_reflections?:
 ActiveRecord::Base#attribute_aliases:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#attribute_aliases?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base#attribute_before_last_save:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#attribute_change_to_be_saved:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#attribute_changed?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base#attribute_changed_in_place?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base#attribute_for_inspect:
   types:
   - undefined
@@ -2504,15 +2436,15 @@ ActiveRecord::Base#attribute_for_inspect:
 ActiveRecord::Base#attribute_in_database:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#attribute_method_matchers:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#attribute_method_matchers?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base#attribute_missing:
   types:
   - undefined
@@ -2523,20 +2455,20 @@ ActiveRecord::Base#attribute_names:
   skip: false
 ActiveRecord::Base#attribute_present?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base#attribute_previously_changed?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base#attribute_previously_was:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#attribute_was:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#attributes:
   types:
   - undefined
@@ -2548,15 +2480,15 @@ ActiveRecord::Base#attributes=:
 ActiveRecord::Base#attributes_before_type_cast:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#attributes_for_database:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#attributes_in_database:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#automatic_scope_inversing:
   types:
   - undefined
@@ -2579,7 +2511,7 @@ ActiveRecord::Base#before_committed!:
   skip: false
 ActiveRecord::Base#blank?:
   types:
-  - 'false'
+  - undefined
   skip: false
 ActiveRecord::Base#cache_key:
   types:
@@ -2592,11 +2524,11 @@ ActiveRecord::Base#cache_key_with_version:
 ActiveRecord::Base#cache_timestamp_format:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#cache_timestamp_format?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base#cache_version:
   types:
   - undefined
@@ -2604,43 +2536,43 @@ ActiveRecord::Base#cache_version:
 ActiveRecord::Base#cache_versioning:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#cache_versioning?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base#changed:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#changed?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base#changed_attribute_names_to_save:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#changed_attributes:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#changed_for_autosave?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base#changes:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#changes_applied:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#changes_to_save:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#ciphertext_for:
   types:
   - undefined
@@ -2652,19 +2584,19 @@ ActiveRecord::Base#class_eval:
 ActiveRecord::Base#clear_attribute_changes:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#clear_changes_information:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#collection_cache_versioning:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#collection_cache_versioning?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base#column_for_attribute:
   types:
   - undefined
@@ -2696,11 +2628,11 @@ ActiveRecord::Base#deep_dup:
 ActiveRecord::Base#default_connection_handler:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#default_connection_handler?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base#default_role:
   types:
   - undefined
@@ -2712,11 +2644,11 @@ ActiveRecord::Base#default_role?:
 ActiveRecord::Base#default_scope_override:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#default_scopes:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#default_shard:
   types:
   - undefined
@@ -2728,22 +2660,22 @@ ActiveRecord::Base#default_shard?:
 ActiveRecord::Base#defined_enums:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#defined_enums?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base#delete:
   types:
   - undefined
   skip: false
 ActiveRecord::Base#destroy:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base#destroy!:
   types:
-  - self
+  - undefined
   skip: false
 ActiveRecord::Base#destroy_association_async_job:
   types:
@@ -2751,7 +2683,7 @@ ActiveRecord::Base#destroy_association_async_job:
   skip: true
 ActiveRecord::Base#destroyed?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base#destroyed_by_association:
   types:
@@ -2763,7 +2695,7 @@ ActiveRecord::Base#destroyed_by_association=:
   skip: false
 ActiveRecord::Base#duplicable?:
   types:
-  - 'true'
+  - undefined
   skip: false
 ActiveRecord::Base#encode_with:
   types:
@@ -2775,7 +2707,7 @@ ActiveRecord::Base#encrypt:
   skip: false
 ActiveRecord::Base#encrypted_attribute?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base#encrypted_attributes:
   types:
@@ -2791,15 +2723,15 @@ ActiveRecord::Base#encrypted_attributes?:
   skip: true
 ActiveRecord::Base#eql?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base#errors:
   types:
-  - "::ActiveModel::Errors"
+  - undefined
   skip: false
 ActiveRecord::Base#freeze:
   types:
-  - self
+  - undefined
   skip: false
 ActiveRecord::Base#from_json:
   types:
@@ -2807,7 +2739,7 @@ ActiveRecord::Base#from_json:
   skip: false
 ActiveRecord::Base#frozen?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base#gem:
   types:
@@ -2815,60 +2747,60 @@ ActiveRecord::Base#gem:
   skip: true
 ActiveRecord::Base#has_attribute?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base#has_changes_to_save?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base#hash:
   types:
-  - "::Integer"
+  - undefined
   skip: false
 ActiveRecord::Base#html_safe?:
   types:
-  - 'false'
+  - undefined
   skip: false
 ActiveRecord::Base#id:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#id=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#id?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base#id_before_type_cast:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#id_for_database:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#id_in_database:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#id_was:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#in?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base#include_root_in_json:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#include_root_in_json?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base#increment:
   types:
   - undefined
@@ -2891,7 +2823,7 @@ ActiveRecord::Base#initialize_internals_callback:
   skip: false
 ActiveRecord::Base#inspect:
   types:
-  - "::String"
+  - undefined
   skip: false
 ActiveRecord::Base#instance_values:
   types:
@@ -2903,7 +2835,7 @@ ActiveRecord::Base#instance_variable_names:
   skip: false
 ActiveRecord::Base#invalid?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base#lock!:
   types:
@@ -2912,19 +2844,19 @@ ActiveRecord::Base#lock!:
 ActiveRecord::Base#lock_optimistically:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#lock_optimistically?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base#locking_enabled?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base#logger:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#logger?:
   types:
   - undefined
@@ -2935,7 +2867,7 @@ ActiveRecord::Base#mark_for_destruction:
   skip: false
 ActiveRecord::Base#marked_for_destruction?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base#method_missing:
   types:
@@ -2948,18 +2880,18 @@ ActiveRecord::Base#model_name:
 ActiveRecord::Base#nested_attributes_options:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#nested_attributes_options?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base#new_record?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base#no_touching?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base#partial_inserts:
   types:
@@ -2979,33 +2911,31 @@ ActiveRecord::Base#partial_updates?:
   skip: true
 ActiveRecord::Base#persisted?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base#pluralize_table_names:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#pluralize_table_names?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base#populate_with_current_scope_attributes:
   types:
   - undefined
   skip: false
 ActiveRecord::Base#presence:
   types:
-  - nil
-  - self
+  - Object
   skip: false
 ActiveRecord::Base#presence_in:
   types:
-  - nil
-  - self
+  - Object
   skip: false
 ActiveRecord::Base#present?:
   types:
-  - 'true'
+  - undefined
   skip: false
 ActiveRecord::Base#pretty_print:
   types:
@@ -3014,75 +2944,63 @@ ActiveRecord::Base#pretty_print:
 ActiveRecord::Base#previous_changes:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#previously_new_record?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base#previously_persisted?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base#primary_key_prefix_type:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#primary_key_prefix_type?:
   types:
   - undefined
   skip: true
-ActiveRecord::Base#pry:
-  types:
-  - undefined
-  skip: false
 ActiveRecord::Base#query_attribute:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#read_attribute:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#read_attribute_before_type_cast:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#readonly!:
   types:
   - undefined
   skip: false
 ActiveRecord::Base#readonly?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base#record_timestamps:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#record_timestamps=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#record_timestamps?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base#reload:
   types:
   - undefined
   skip: false
-ActiveRecord::Base#require_dependency:
-  types:
-  - undefined
-  skip: false
-ActiveRecord::Base#respond_to?:
-  types:
-  - "::Boolean"
-  skip: false
 ActiveRecord::Base#restore_attributes:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#rolledback!:
   types:
   - undefined
@@ -3090,31 +3008,31 @@ ActiveRecord::Base#rolledback!:
 ActiveRecord::Base#run_callbacks:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#save:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base#save!:
   types:
-  - void
+  - undefined
   skip: false
 ActiveRecord::Base#saved_change_to_attribute:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#saved_change_to_attribute?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base#saved_changes:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#saved_changes?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base#serializable_hash:
   types:
   - undefined
@@ -3134,14 +3052,14 @@ ActiveRecord::Base#signed_id_verifier_secret?:
 ActiveRecord::Base#skip_time_zone_conversion_for_attributes:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#skip_time_zone_conversion_for_attributes?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base#slice:
   types:
-  - "::ActiveSupport::HashWithIndifferentAccess<::Symbol>"
+  - undefined
   skip: false
 ActiveRecord::Base#store_full_class_name:
   types:
@@ -3154,18 +3072,18 @@ ActiveRecord::Base#store_full_class_name?:
 ActiveRecord::Base#store_full_sti_class:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#store_full_sti_class?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base#strict_loading!:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base#strict_loading?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base#strict_loading_mode:
   types:
@@ -3173,28 +3091,28 @@ ActiveRecord::Base#strict_loading_mode:
   skip: false
 ActiveRecord::Base#strict_loading_n_plus_one_only?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base#table_name_prefix:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#table_name_prefix?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base#table_name_suffix:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#table_name_suffix?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base#time_zone_aware_attributes:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#time_zone_aware_attributes?:
   types:
   - undefined
@@ -3202,11 +3120,11 @@ ActiveRecord::Base#time_zone_aware_attributes?:
 ActiveRecord::Base#time_zone_aware_types:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#time_zone_aware_types?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActiveRecord::Base#to_gid:
   types:
   - undefined
@@ -3241,7 +3159,7 @@ ActiveRecord::Base#to_partial_path:
   skip: false
 ActiveRecord::Base#to_query:
   types:
-  - "::String"
+  - undefined
   skip: false
 ActiveRecord::Base#to_sgid:
   types:
@@ -3277,7 +3195,7 @@ ActiveRecord::Base#transaction:
   skip: false
 ActiveRecord::Base#trigger_transactional_callbacks?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base#try:
   types:
@@ -3293,11 +3211,11 @@ ActiveRecord::Base#type_for_attribute:
   skip: true
 ActiveRecord::Base#update:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base#update!:
   types:
-  - self
+  - undefined
   skip: false
 ActiveRecord::Base#update_attribute:
   types:
@@ -3313,60 +3231,60 @@ ActiveRecord::Base#update_columns:
   skip: false
 ActiveRecord::Base#valid?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActiveRecord::Base#validate:
   types:
-  - "::Boolean"
+  - Boolean
   skip: false
 ActiveRecord::Base#validate!:
   types:
-  - 'true'
+  - undefined
   skip: false
 ActiveRecord::Base#validates_absence_of:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#validates_acceptance_of:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#validates_comparison_of:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#validates_confirmation_of:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#validates_exclusion_of:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#validates_format_of:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#validates_inclusion_of:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#validates_length_of:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#validates_numericality_of:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#validates_presence_of:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#validates_size_of:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#validates_with:
   types:
   - undefined
@@ -3374,20 +3292,16 @@ ActiveRecord::Base#validates_with:
 ActiveRecord::Base#validation_context:
   types:
   - undefined
-  skip: false
+  skip: true
 ActiveRecord::Base#values_at:
-  types:
-  - "::Array"
-  skip: false
-ActiveRecord::Base#will_save_change_to_attribute?:
-  types:
-  - "::Boolean"
-  skip: false
-ActiveRecord::Base#with_lock:
   types:
   - undefined
   skip: false
-ActiveRecord::Base#with_options:
+ActiveRecord::Base#will_save_change_to_attribute?:
+  types:
+  - undefined
+  skip: true
+ActiveRecord::Base#with_lock:
   types:
   - undefined
   skip: false
@@ -3398,4 +3312,4 @@ ActiveRecord::Base#with_transaction_returning_status:
 ActiveRecord::Base#write_attribute:
   types:
   - undefined
-  skip: false
+  skip: true

@@ -1,9 +1,10 @@
 ENV['RAILS_ENV'] = 'test'
 
+require 'debug'
 require 'solargraph'
 require 'solargraph-rails'
 require 'logger'
-require 'byebug'
+require 'debug'
 require 'fileutils'
 require_relative './helpers'
 

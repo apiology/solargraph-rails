@@ -1,4 +1,16 @@
 ---
+ActionController::Base.abstract:
+  types:
+  - undefined
+  skip: false
+ActionController::Base.abstract!:
+  types:
+  - undefined
+  skip: false
+ActionController::Base.abstract?:
+  types:
+  - undefined
+  skip: false
 ActionController::Base.action:
   types:
   - undefined
@@ -13,24 +25,20 @@ ActionController::Base.action_methods:
   skip: false
 ActionController::Base.acts_like?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActionController::Base.add_flash_types:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base.after_action:
   types:
-  - void
-  skip: false
-ActionController::Base.alias_attribute:
-  types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base.all_helpers_from_path:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base.allow_forgery_protection:
   types:
   - undefined
@@ -41,28 +49,28 @@ ActionController::Base.allow_forgery_protection=:
   skip: true
 ActionController::Base.anonymous?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActionController::Base.append_after_action:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActionController::Base.append_around_action:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActionController::Base.append_before_action:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActionController::Base.append_view_path:
   types:
   - undefined
   skip: true
 ActionController::Base.around_action:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActionController::Base.as_json:
   types:
   - undefined
@@ -89,23 +97,24 @@ ActionController::Base.attr_internal:
   skip: false
 ActionController::Base.attr_internal_accessor:
   types:
-  - void
+  - undefined
   skip: false
 ActionController::Base.attr_internal_reader:
   types:
-  - void
+  - undefined
   skip: false
 ActionController::Base.attr_internal_writer:
   types:
-  - void
+  - undefined
   skip: false
 ActionController::Base.before_action:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActionController::Base.blank?:
   types:
-  - "::Boolean"
+  - 'true'
+  - 'false'
   skip: false
 ActionController::Base.build_view_context_class:
   types:
@@ -142,7 +151,7 @@ ActionController::Base.clear_action_methods!:
 ActionController::Base.clear_helpers:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base.clear_respond_to:
   types:
   - undefined
@@ -166,11 +175,11 @@ ActionController::Base.configure:
 ActionController::Base.content_security_policy:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base.content_security_policy_report_only:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base.controller_name:
   types:
   - undefined
@@ -194,7 +203,7 @@ ActionController::Base.default_asset_host_protocol=:
 ActionController::Base.default_form_builder:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base.default_protect_from_forgery:
   types:
   - undefined
@@ -257,7 +266,7 @@ ActionController::Base.dispatch:
   skip: false
 ActionController::Base.duplicable?:
   types:
-  - 'true'
+  - undefined
   skip: false
 ActionController::Base.enable_fragment_cache_logging:
   types:
@@ -270,7 +279,7 @@ ActionController::Base.enable_fragment_cache_logging=:
 ActionController::Base.etag:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base.etag_with_template_digest:
   types:
   - undefined
@@ -314,7 +323,7 @@ ActionController::Base.forgery_protection_strategy=:
 ActionController::Base.fragment_cache_key:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base.fragment_cache_keys:
   types:
   - undefined
@@ -338,19 +347,19 @@ ActionController::Base.handler_for_rescue:
 ActionController::Base.helper:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base.helper_attr:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base.helper_method:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base.helpers:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base.helpers_path:
   types:
   - undefined
@@ -365,15 +374,15 @@ ActionController::Base.helpers_path?:
   skip: true
 ActionController::Base.html_safe?:
   types:
-  - 'false'
+  - undefined
   skip: false
 ActionController::Base.http_basic_authenticate_with:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base.in?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActionController::Base.include_all_helpers:
   types:
@@ -414,7 +423,7 @@ ActionController::Base.javascripts_dir=:
 ActionController::Base.layout:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base.log_at:
   types:
   - undefined
@@ -422,7 +431,7 @@ ActionController::Base.log_at:
 ActionController::Base.log_process_action:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base.log_warning_on_csrf_failure:
   types:
   - undefined
@@ -506,15 +515,15 @@ ActionController::Base.module_parents:
 ActionController::Base.modules_for_helpers:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base.normalize_callback_params:
   types:
-  - "::Array"
+  - undefined
   skip: false
 ActionController::Base.param_encoding:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base.per_form_csrf_tokens:
   types:
   - undefined
@@ -537,39 +546,34 @@ ActionController::Base.permissions_policy:
   skip: true
 ActionController::Base.prepend_after_action:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActionController::Base.prepend_around_action:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActionController::Base.prepend_before_action:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActionController::Base.prepend_view_path:
   types:
   - undefined
   skip: true
 ActionController::Base.presence:
   types:
-  - nil
-  - self
+  - Object
   skip: false
 ActionController::Base.presence_in:
   types:
-  - nil
-  - self
+  - Object
   skip: false
 ActionController::Base.present?:
   types:
-  - "::Boolean"
+  - 'true'
+  - 'false'
   skip: false
 ActionController::Base.protect_from_forgery:
-  types:
-  - undefined
-  skip: false
-ActionController::Base.pry:
   types:
   - undefined
   skip: false
@@ -581,10 +585,6 @@ ActionController::Base.raise_on_open_redirects=:
   types:
   - undefined
   skip: true
-ActionController::Base.rake_extension:
-  types:
-  - undefined
-  skip: false
 ActionController::Base.redefine_method:
   types:
   - undefined
@@ -616,7 +616,7 @@ ActionController::Base.render:
 ActionController::Base.renderer:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base.request_forgery_protection_token:
   types:
   - undefined
@@ -625,13 +625,9 @@ ActionController::Base.request_forgery_protection_token=:
   types:
   - undefined
   skip: true
-ActionController::Base.require_dependency:
-  types:
-  - undefined
-  skip: false
 ActionController::Base.rescue_from:
   types:
-  - void
+  - undefined
   skip: false
 ActionController::Base.rescue_handlers:
   types:
@@ -680,27 +676,27 @@ ActionController::Base.set_callback:
 ActionController::Base.setup_param_encode:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base.setup_renderer!:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base.silence_redefinition_of_method:
   types:
   - undefined
   skip: false
 ActionController::Base.skip_after_action:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActionController::Base.skip_around_action:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActionController::Base.skip_before_action:
   types:
-  - void
-  skip: false
+  - undefined
+  skip: true
 ActionController::Base.skip_callback:
   types:
   - undefined
@@ -712,7 +708,7 @@ ActionController::Base.skip_forgery_protection:
 ActionController::Base.skip_parameter_encoding:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base.stylesheets_dir:
   types:
   - undefined
@@ -723,11 +719,11 @@ ActionController::Base.stylesheets_dir=:
   skip: true
 ActionController::Base.subclasses:
   types:
-  - "::Array<::Class>"
+  - undefined
   skip: false
 ActionController::Base.supports_path?:
   types:
-  - 'true'
+  - undefined
   skip: false
 ActionController::Base.thread_cattr_accessor:
   types:
@@ -763,7 +759,7 @@ ActionController::Base.to_param:
   skip: false
 ActionController::Base.to_query:
   types:
-  - "::String"
+  - undefined
   skip: false
 ActionController::Base.try:
   types:
@@ -796,7 +792,7 @@ ActionController::Base.use_renderers:
 ActionController::Base.view_cache_dependency:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base.view_context_class:
   types:
   - undefined
@@ -820,11 +816,11 @@ ActionController::Base.without_modules:
 ActionController::Base.wrap_parameters:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#action_has_layout?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActionController::Base#action_methods:
   types:
   - undefined
@@ -836,10 +832,10 @@ ActionController::Base#action_name:
 ActionController::Base#action_name=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#acts_like?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActionController::Base#after_sign_in_path_for:
   types:
@@ -896,42 +892,39 @@ ActionController::Base#assets_dir=:
 ActionController::Base#authenticate_or_request_with_http_basic:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#authenticate_or_request_with_http_digest:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#authenticate_or_request_with_http_token:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#authenticate_with_http_basic:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#authenticate_with_http_digest:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#authenticate_with_http_token:
-  # Awaiting either better definition in RBS (this should return a
-  # generic based on the block passed in) or an understanding of
-  # boolish type from solargraph
   types:
-#  - boolish
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#available_action?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActionController::Base#benchmark:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#blank?:
   types:
-  - "::Boolean"
+  - 'true'
+  - 'false'
   skip: false
 ActionController::Base#bypass_sign_in:
   types:
@@ -940,11 +933,11 @@ ActionController::Base#bypass_sign_in:
 ActionController::Base#cache_store:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#cache_store=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#class_eval:
   types:
   - undefined
@@ -952,19 +945,19 @@ ActionController::Base#class_eval:
 ActionController::Base#combined_fragment_cache_key:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#config:
   types:
-  - "::ActiveSupport::InheritableOptions"
+  - undefined
   skip: false
 ActionController::Base#content_type:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#content_type=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#controller_name:
   types:
   - undefined
@@ -988,7 +981,7 @@ ActionController::Base#default_asset_host_protocol=:
 ActionController::Base#default_form_builder:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#default_protect_from_forgery:
   types:
   - undefined
@@ -1000,7 +993,7 @@ ActionController::Base#default_protect_from_forgery=:
 ActionController::Base#default_render:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#default_static_extension:
   types:
   - undefined
@@ -1023,7 +1016,7 @@ ActionController::Base#default_url_options?:
   skip: true
 ActionController::Base#details_for_lookup:
   types:
-  - "::Hash"
+  - undefined
   skip: false
 ActionController::Base#devise_controller?:
   types:
@@ -1039,7 +1032,7 @@ ActionController::Base#dispatch:
   skip: false
 ActionController::Base#duplicable?:
   types:
-  - 'true'
+  - undefined
   skip: false
 ActionController::Base#edit_polymorphic_path:
   types:
@@ -1084,18 +1077,18 @@ ActionController::Base#etaggers?:
 ActionController::Base#expire_fragment:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#expires_in:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#expires_now:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#flash:
   types:
-  - "::ActionDispatch::Flash::FlashHash"
+  - ActionDispatch::Flash::FlashHash
   skip: false
 ActionController::Base#forgery_protection_origin_check:
   types:
@@ -1120,7 +1113,7 @@ ActionController::Base#formats:
 ActionController::Base#formats=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#fragment_cache_keys:
   types:
   - undefined
@@ -1135,12 +1128,12 @@ ActionController::Base#fragment_cache_keys?:
   skip: true
 ActionController::Base#fragment_exist?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActionController::Base#fresh_when:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#full_url_for:
   types:
   - undefined
@@ -1152,50 +1145,50 @@ ActionController::Base#gem:
 ActionController::Base#handle_unverified_request:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#handler_for_rescue:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#head:
   types:
-  - 'true'
-  skip: false
+  - undefined
+  skip: true
 ActionController::Base#headers:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#helpers:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#helpers_path:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#helpers_path=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#helpers_path?:
   types:
   - undefined
   skip: true
 ActionController::Base#html_safe?:
   types:
-  - 'false'
+  - undefined
   skip: false
 ActionController::Base#http_basic_authenticate_or_request_with:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#http_cache_forever:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#in?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActionController::Base#include_all_helpers:
   types:
@@ -1211,7 +1204,7 @@ ActionController::Base#include_all_helpers?:
   skip: true
 ActionController::Base#inspect:
   types:
-  - "::String"
+  - undefined
   skip: false
 ActionController::Base#instance_values:
   types:
@@ -1224,7 +1217,7 @@ ActionController::Base#instance_variable_names:
 ActionController::Base#instrument_fragment_cache:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#is_flashing_format?:
   types:
   - undefined
@@ -1244,7 +1237,7 @@ ActionController::Base#javascripts_dir=:
 ActionController::Base#l:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#locale:
   types:
   - undefined
@@ -1256,15 +1249,15 @@ ActionController::Base#locale=:
 ActionController::Base#localize:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#location:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#location=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#log_warning_on_csrf_failure:
   types:
   - undefined
@@ -1292,7 +1285,7 @@ ActionController::Base#main_app:
 ActionController::Base#media_type:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#method_for_action:
   types:
   - undefined
@@ -1332,14 +1325,14 @@ ActionController::Base#new_polymorphic_url:
 ActionController::Base#no_store:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#notice:
   types:
   - undefined
   skip: true
 ActionController::Base#params:
   types:
-  - undefined
+  - ActionController::Parameters
   skip: false
 ActionController::Base#params=:
   types:
@@ -1363,7 +1356,7 @@ ActionController::Base#perform_caching=:
   skip: true
 ActionController::Base#performed?:
   types:
-  - "::Boolean"
+  - undefined
   skip: false
 ActionController::Base#polymorphic_path:
   types:
@@ -1379,23 +1372,18 @@ ActionController::Base#prepend_view_path:
   skip: false
 ActionController::Base#presence:
   types:
-  - nil
-  - self
+  - Object
   skip: false
 ActionController::Base#presence_in:
   types:
-  - nil
-  - self
+  - Object
   skip: false
 ActionController::Base#present?:
   types:
-  - "::Boolean"
+  - 'true'
+  - 'false'
   skip: false
 ActionController::Base#process:
-  types:
-  - undefined
-  skip: false
-ActionController::Base#pry:
   types:
   - undefined
   skip: false
@@ -1418,7 +1406,7 @@ ActionController::Base#raise_on_open_redirects=:
 ActionController::Base#read_fragment:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#redirect_back:
   types:
   - undefined
@@ -1445,7 +1433,7 @@ ActionController::Base#render:
   skip: false
 ActionController::Base#render_to_body:
   types:
-  - nil
+  - undefined
   skip: false
 ActionController::Base#render_to_string:
   types:
@@ -1457,12 +1445,12 @@ ActionController::Base#rendered_format:
   skip: false
 ActionController::Base#request:
   types:
-  - "::ActionDispatch::Request"
+  - ActionDispatch::Request
   skip: false
 ActionController::Base#request=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#request_forgery_protection_token:
   types:
   - undefined
@@ -1478,19 +1466,15 @@ ActionController::Base#request_format:
 ActionController::Base#request_http_basic_authentication:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#request_http_digest_authentication:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#request_http_token_authentication:
   types:
-  - void
-  skip: false
-ActionController::Base#require_dependency:
-  types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#rescue_handlers:
   types:
   - undefined
@@ -1506,7 +1490,7 @@ ActionController::Base#rescue_handlers?:
 ActionController::Base#rescue_with_handler:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#reset_session:
   types:
   - undefined
@@ -1533,12 +1517,12 @@ ActionController::Base#responder?:
   skip: true
 ActionController::Base#response:
   types:
-  - "::ActionDispatch::Response"
+  - ActionDispatch::Response
   skip: false
 ActionController::Base#response=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#response_body:
   types:
   - undefined
@@ -1558,7 +1542,7 @@ ActionController::Base#route_for:
 ActionController::Base#run_callbacks:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#send_action:
   types:
   - undefined
@@ -1566,14 +1550,14 @@ ActionController::Base#send_action:
 ActionController::Base#send_data:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#send_file:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#session:
   types:
-  - "::ActionDispatch::Request::Session"
+  - ActionDispatch::Request::Session
   skip: false
 ActionController::Base#set_request!:
   types:
@@ -1585,8 +1569,8 @@ ActionController::Base#set_response!:
   skip: false
 ActionController::Base#show_detailed_exceptions?:
   types:
-  - 'false'
-  skip: false
+  - undefined
+  skip: true
 ActionController::Base#sign_in:
   types:
   - undefined
@@ -1617,16 +1601,16 @@ ActionController::Base#signed_in_root_path:
   skip: true
 ActionController::Base#stale?:
   types:
-  - "::Boolean"
-  skip: false
+  - undefined
+  skip: true
 ActionController::Base#status:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#status=:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#store_location_for:
   types:
   - undefined
@@ -1646,7 +1630,7 @@ ActionController::Base#stylesheets_dir=:
 ActionController::Base#t:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#template_exists?:
   types:
   - undefined
@@ -1665,12 +1649,12 @@ ActionController::Base#to_param:
   skip: false
 ActionController::Base#to_query:
   types:
-  - "::String"
+  - undefined
   skip: false
 ActionController::Base#translate:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#try:
   types:
   - undefined
@@ -1702,15 +1686,15 @@ ActionController::Base#view_assigns:
 ActionController::Base#view_cache_dependencies:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#view_context:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#view_context_class:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#view_paths:
   types:
   - undefined
@@ -1718,7 +1702,7 @@ ActionController::Base#view_paths:
 ActionController::Base#view_renderer:
   types:
   - undefined
-  skip: false
+  skip: true
 ActionController::Base#warden:
   types:
   - undefined
@@ -1730,4 +1714,4 @@ ActionController::Base#with_options:
 ActionController::Base#write_fragment:
   types:
   - undefined
-  skip: false
+  skip: true
