@@ -1477,8 +1477,8 @@ ActionController::Base#request_http_digest_authentication:
   skip: true
 ActionController::Base#request_http_token_authentication:
   types:
-  - undefined
-  skip: true
+  - void
+  skip: false
 ActionController::Base#rescue_handlers:
   types:
   - undefined
