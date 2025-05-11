@@ -694,8 +694,8 @@ ActiveRecord::Base.default_scopes=:
   skip: false
 ActiveRecord::Base.default_scopes?:
   types:
-  - undefined
-  skip: true
+  - "::Boolean"
+  skip: false
 ActiveRecord::Base.default_shard:
   types:
   - undefined
@@ -1055,11 +1055,11 @@ ActiveRecord::Base.get_primary_key:
 ActiveRecord::Base.global_current_scope:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.global_current_scope=:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.group:
   types:
   - undefined
@@ -1255,7 +1255,7 @@ ActiveRecord::Base.inspect:
 ActiveRecord::Base.inspection_filter:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.instance_method_already_implemented?:
   types:
   - "::Boolean"
@@ -1656,8 +1656,8 @@ ActiveRecord::Base.readonly:
   skip: false
 ActiveRecord::Base.readonly_attribute?:
   types:
-  - undefined
-  skip: true
+  - "::Boolean"
+  skip: false
 ActiveRecord::Base.readonly_attributes:
   types:
   - undefined
@@ -1857,7 +1857,7 @@ ActiveRecord::Base.scope_for_association:
 ActiveRecord::Base.scope_registry:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.second:
   types:
   - undefined
@@ -1908,7 +1908,7 @@ ActiveRecord::Base.shard_selector?:
   skip: true
 ActiveRecord::Base.shard_swapping_prohibited?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 ActiveRecord::Base.signed_id_verifier:
   types:
@@ -2217,7 +2217,7 @@ ActiveRecord::Base.update:
 ActiveRecord::Base.update!:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.update_all:
   types:
   - undefined
@@ -2289,7 +2289,7 @@ ActiveRecord::Base.validates_length_of:
 ActiveRecord::Base.validates_numericality_of:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.validates_presence_of:
   types:
   - undefined
@@ -2502,7 +2502,7 @@ ActiveRecord::Base#attributes_before_type_cast:
 ActiveRecord::Base#attributes_for_database:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base#attributes_in_database:
   types:
   - undefined
@@ -2798,7 +2798,7 @@ ActiveRecord::Base#id_before_type_cast:
 ActiveRecord::Base#id_for_database:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base#id_in_database:
   types:
   - undefined
@@ -2967,7 +2967,7 @@ ActiveRecord::Base#previous_changes:
   skip: false
 ActiveRecord::Base#previously_new_record?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 ActiveRecord::Base#previously_persisted?:
   types:
@@ -3079,7 +3079,7 @@ ActiveRecord::Base#skip_time_zone_conversion_for_attributes?:
   skip: false
 ActiveRecord::Base#slice:
   types:
-  - undefined
+  - "::ActiveSupport::HashWithIndifferentAccess<::Symbol>"
   skip: false
 ActiveRecord::Base#store_full_class_name:
   types:
@@ -3111,7 +3111,7 @@ ActiveRecord::Base#strict_loading_mode:
   skip: false
 ActiveRecord::Base#strict_loading_n_plus_one_only?:
   types:
-  - undefined
+  - "::Boolean"
   skip: false
 ActiveRecord::Base#table_name_prefix:
   types:
