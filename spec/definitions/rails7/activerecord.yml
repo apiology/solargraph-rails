@@ -402,11 +402,11 @@ ActiveRecord::Base.class_attribute:
 ActiveRecord::Base.clear_active_connections!:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.clear_all_connections!:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.clear_cache!:
   types:
   - undefined
@@ -422,7 +422,7 @@ ActiveRecord::Base.clear_reflections_cache:
 ActiveRecord::Base.clear_reloadable_connections!:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.clear_validators!:
   types:
   - undefined
@@ -1003,7 +1003,7 @@ ActiveRecord::Base.first_or_initialize:
 ActiveRecord::Base.flush_idle_connections!:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.forty_two:
   types:
   - undefined
