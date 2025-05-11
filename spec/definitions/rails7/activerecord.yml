@@ -294,7 +294,7 @@ ActiveRecord::Base.automatic_scope_inversing?:
 ActiveRecord::Base.average:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.base_class:
   types:
   - undefined
@@ -390,7 +390,7 @@ ActiveRecord::Base.cached_find_by_statement:
 ActiveRecord::Base.calculate:
   types:
   - undefined
-  skip: true
+  skip: false
 ActiveRecord::Base.cattr_accessor:
   types:
   - undefined
