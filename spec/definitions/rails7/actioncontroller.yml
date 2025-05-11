@@ -35,6 +35,10 @@ ActionController::Base.after_action:
   types:
   - void
   skip: false
+ActionController::Base.alias_attribute:
+  types:
+  - undefined
+  skip: false
 ActionController::Base.all_helpers_from_path:
   types:
   - undefined
@@ -627,7 +631,7 @@ ActionController::Base.request_forgery_protection_token=:
   skip: true
 ActionController::Base.require_dependency:
   types:
-  - undefined
+  - void
   skip: false
 ActionController::Base.rescue_from:
   types:
@@ -914,7 +918,11 @@ ActionController::Base#authenticate_with_http_digest:
   - undefined
   skip: false
 ActionController::Base#authenticate_with_http_token:
+  # Awaiting either better definition in RBS (this should return a
+  # generic based on the block passed in) or an understanding of
+  # boolish type from solargraph
   types:
+#  - boolish
   - undefined
   skip: false
 ActionController::Base#available_action?:

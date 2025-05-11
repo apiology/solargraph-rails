@@ -1,4 +1,8 @@
 ---
+ActiveJob::Base.acts_like?:
+  types:
+  - "::Boolean"
+  skip: false
 ActiveJob::Base.after_enqueue:
   types:
   - void
@@ -9,7 +13,11 @@ ActiveJob::Base.after_perform:
   skip: false
 ActiveJob::Base.alias_attribute:
   types:
-  - undefined
+  - "::Boolean"
+  skip: false
+ActiveJob::Base.anonymous?:
+  types:
+  - "::Boolean"
   skip: false
 ActiveJob::Base.anonymous?:
   types:
@@ -22,6 +30,10 @@ ActiveJob::Base.around_enqueue:
 ActiveJob::Base.around_perform:
   types:
   - void
+  skip: false
+ActiveJob::Base.as_json:
+  types:
+  - undefined
   skip: false
 ActiveJob::Base.attr_internal:
   types:
@@ -47,6 +59,38 @@ ActiveJob::Base.before_perform:
   types:
   - void
   skip: false
+ActiveJob::Base.blank?:
+  types:
+  - "::Boolean"
+  skip: false
+ActiveJob::Base.cattr_accessor:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.cattr_reader:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.cattr_writer:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.class_attribute:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.concern:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.concerning:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.deep_dup:
+  types:
+  - undefined
+  skip: false
 ActiveJob::Base.default_priority:
   types:
   - undefined
@@ -60,6 +104,10 @@ ActiveJob::Base.default_queue_name:
   - undefined
   skip: true
 ActiveJob::Base.default_queue_name=:
+  types:
+  - undefined
+  skip: true
+ActiveJob::Base.define_callbacks:
   types:
   - undefined
   skip: true
@@ -91,14 +139,38 @@ ActiveJob::Base.discard_on:
   types:
   - void
   skip: false
+ActiveJob::Base.duplicable?:
+  types:
+  - 'true'
+  skip: false
 ActiveJob::Base.execute:
   types:
   - undefined
   skip: false
+ActiveJob::Base.gem:
+  types:
+  - undefined
+  skip: true
 ActiveJob::Base.handler_for_rescue:
   types:
   - undefined
   skip: true
+ActiveJob::Base.html_safe?:
+  types:
+  - 'false'
+  skip: false
+ActiveJob::Base.in?:
+  types:
+  - "::Boolean"
+  skip: false
+ActiveJob::Base.instance_values:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.instance_variable_names:
+  types:
+  - undefined
+  skip: false
 ActiveJob::Base.log_arguments:
   types:
   - undefined
@@ -119,6 +191,34 @@ ActiveJob::Base.logger=:
   types:
   - undefined
   skip: true
+ActiveJob::Base.mattr_accessor:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.mattr_reader:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.mattr_writer:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.method_visibility:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.module_parent:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.module_parent_name:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.module_parents:
+  types:
+  - undefined
+  skip: false
 ActiveJob::Base.normalize_callback_params:
   types:
   - undefined
@@ -130,6 +230,20 @@ ActiveJob::Base.perform_later:
 ActiveJob::Base.perform_now:
   types:
   - undefined
+  skip: false
+ActiveJob::Base.presence:
+  types:
+  - nil
+  - self
+  skip: false
+ActiveJob::Base.presence_in:
+  types:
+  - nil
+  - self
+  skip: false
+ActiveJob::Base.present?:
+  types:
+  - "::Boolean"
   skip: false
 ActiveJob::Base.priority:
   types:
@@ -143,6 +257,10 @@ ActiveJob::Base.priority?:
   types:
   - undefined
   skip: true
+ActiveJob::Base.pry:
+  types:
+  - undefined
+  skip: false
 ActiveJob::Base.queue_adapter:
   types:
   - undefined
@@ -203,6 +321,30 @@ ActiveJob::Base.queue_with_priority:
   types:
   - void
   skip: false
+ActiveJob::Base.rake_extension:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.redefine_method:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.redefine_singleton_method:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.remove_possible_method:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.remove_possible_singleton_method:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.require_dependency:
+  types:
+  - undefined
+  skip: false
 ActiveJob::Base.rescue_from:
   types:
   - undefined
@@ -255,6 +397,10 @@ ActiveJob::Base.set_callback:
   types:
   - undefined
   skip: true
+ActiveJob::Base.silence_redefinition_of_method:
+  types:
+  - undefined
+  skip: false
 ActiveJob::Base.skip_after_callbacks_if_terminated:
   types:
   - undefined
@@ -267,6 +413,62 @@ ActiveJob::Base.skip_callback:
   types:
   - undefined
   skip: true
+ActiveJob::Base.subclasses:
+  types:
+  - "::Array<::Class>"
+  skip: false
+ActiveJob::Base.thread_cattr_accessor:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.thread_cattr_reader:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.thread_cattr_writer:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.thread_mattr_accessor:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.thread_mattr_reader:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.thread_mattr_writer:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.to_json:
+  types:
+  - undefined
+  skip: true
+ActiveJob::Base.to_param:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.to_query:
+  types:
+  - "::String"
+  skip: false
+ActiveJob::Base.try:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.try!:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base.with_options:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base#acts_like?:
+  types:
+  - "::Boolean"
+  skip: false
 ActiveJob::Base#arguments:
   types:
   - undefined
@@ -275,9 +477,29 @@ ActiveJob::Base#arguments=:
   types:
   - undefined
   skip: false
+ActiveJob::Base#as_json:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base#blank?:
+  types:
+  - "::Boolean"
+  skip: false
+ActiveJob::Base#class_eval:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base#deep_dup:
+  types:
+  - undefined
+  skip: false
 ActiveJob::Base#deserialize:
   types:
   - undefined
+  skip: false
+ActiveJob::Base#duplicable?:
+  types:
+  - 'true'
   skip: false
 ActiveJob::Base#enqueue:
   types:
@@ -307,7 +529,27 @@ ActiveJob::Base#executions=:
   types:
   - undefined
   skip: false
+ActiveJob::Base#gem:
+  types:
+  - undefined
+  skip: true
 ActiveJob::Base#handler_for_rescue:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base#html_safe?:
+  types:
+  - 'false'
+  skip: false
+ActiveJob::Base#in?:
+  types:
+  - "::Boolean"
+  skip: false
+ActiveJob::Base#instance_values:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base#instance_variable_names:
   types:
   - undefined
   skip: false
@@ -343,6 +585,20 @@ ActiveJob::Base#perform_now:
   types:
   - undefined
   skip: false
+ActiveJob::Base#presence:
+  types:
+  - nil
+  - self
+  skip: false
+ActiveJob::Base#presence_in:
+  types:
+  - nil
+  - self
+  skip: false
+ActiveJob::Base#present?:
+  types:
+  - "::Boolean"
+  skip: false
 ActiveJob::Base#priority:
   types:
   - undefined
@@ -356,6 +612,10 @@ ActiveJob::Base#provider_job_id:
   - undefined
   skip: false
 ActiveJob::Base#provider_job_id=:
+  types:
+  - undefined
+  skip: false
+ActiveJob::Base#pry:
   types:
   - undefined
   skip: false
@@ -383,6 +643,10 @@ ActiveJob::Base#queue_name_prefix?:
   types:
   - undefined
   skip: true
+ActiveJob::Base#require_dependency:
+  types:
+  - undefined
+  skip: false
 ActiveJob::Base#rescue_handlers:
   types:
   - undefined
@@ -441,6 +705,10 @@ ActiveJob::Base#timezone=:
   types:
   - undefined
   skip: false
+ActiveJob::Base#to_json:
+  types:
+  - undefined
+  skip: true
 ActiveJob::Base#to_param:
   types:
   - undefined
