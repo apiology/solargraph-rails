@@ -138,6 +138,8 @@ Time.duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
+  - branch-castwide-master
 Time.find_zone:
   types:
   - ActiveSupport::TimeZone
@@ -166,6 +168,8 @@ Time.html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
+  - branch-castwide-master
 Time.in?:
   types:
   - Boolean
@@ -350,6 +354,7 @@ Time#-:
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
+  - 0.60.3
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -380,6 +385,7 @@ Time#<=>:
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
+  - 0.60.3
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -397,6 +403,8 @@ Time#acts_like_time?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
+  - branch-castwide-master
 Time#advance:
   types:
   - undefined
@@ -477,6 +485,7 @@ Time#as_json:
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
+  - 0.60.3
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -594,6 +603,8 @@ Time#blank?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
+  - branch-castwide-master
 Time#change:
   types:
   - undefined
@@ -614,6 +625,8 @@ Time#compare_with_coercion:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
+  - branch-castwide-master
 Time#days_ago:
   types:
   - undefined
@@ -639,6 +652,8 @@ Time#duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
+  - branch-castwide-master
 Time#end_of_day:
   types:
   - undefined
@@ -692,6 +707,8 @@ Time#html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
+  - branch-castwide-master
 Time#in:
   types:
   - undefined
@@ -781,6 +798,7 @@ Time#minus_without_coercion:
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
+  - 0.60.3
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -997,6 +1015,7 @@ Time#utc_to_local_returns_utc_offset_times:
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
+  - 0.60.3
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master

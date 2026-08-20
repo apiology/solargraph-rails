@@ -108,6 +108,8 @@ Array.duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
+  - branch-castwide-master
 Array.html_safe?:
   types:
   - 'false'
@@ -117,6 +119,8 @@ Array.html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
+  - branch-castwide-master
 Array.in?:
   types:
   - Boolean
@@ -265,6 +269,7 @@ Array#class_eval:
 Array#compact_blank:
   types:
   - Array
+  min_rbs: '4.0'
   skip:
   - 0.48.0
   - 0.49.0
@@ -273,6 +278,8 @@ Array#compact_blank:
   - 0.52.0
   - 0.55.alpha
   - 0.57.0
+  - 0.60.3
+  - branch-castwide-master
 Array#compact_blank!:
   types:
   - Array<generic<Elem>>
@@ -295,6 +302,8 @@ Array#duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
+  - branch-castwide-master
 Array#exclude?:
   types:
   - Boolean
@@ -336,6 +345,8 @@ Array#html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
+  - branch-castwide-master
 Array#in?:
   types:
   - Boolean

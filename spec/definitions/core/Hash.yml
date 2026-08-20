@@ -108,6 +108,8 @@ Hash.duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
+  - branch-castwide-master
 Hash.from_trusted_xml:
   types:
   - undefined
@@ -125,6 +127,8 @@ Hash.html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
+  - branch-castwide-master
 Hash.in?:
   types:
   - Boolean
@@ -331,6 +335,7 @@ Hash#deep_stringify_keys!:
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
+  - 0.60.3
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -358,6 +363,7 @@ Hash#deep_symbolize_keys:
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
+  - 0.60.3
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -385,6 +391,7 @@ Hash#deep_symbolize_keys!:
   - 0.59.0
   - 0.59.0.dev.1
   - 0.59.0.dev.2
+  - 0.60.3
   - branch-2025-09-22
   - branch-better_signature_combination
   - branch-castwide-master
@@ -414,6 +421,8 @@ Hash#duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
+  - branch-castwide-master
 Hash#except!:
   types:
   - undefined
@@ -443,6 +452,8 @@ Hash#html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
+  - branch-castwide-master
 Hash#in?:
   types:
   - Boolean

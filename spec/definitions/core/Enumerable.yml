@@ -59,14 +59,12 @@ Enumerable#sole:
 Enumerable#sum:
   types:
   - Integer
-  - generic<Elem>
+  - generic<E>
   - generic<T>
   - generic<U>
+  min_rbs: '4.0'
   skip:
   - 0.48.0
-  - 0.49.0
-  - 0.50.0
-  - 0.51.2
 Enumerable#without:
   types:
   - undefined

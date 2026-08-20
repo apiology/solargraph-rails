@@ -108,6 +108,8 @@ ActionDispatch::Routing::Mapper.duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
+  - branch-castwide-master
 ActionDispatch::Routing::Mapper.html_safe?:
   types:
   - 'false'
@@ -117,6 +119,8 @@ ActionDispatch::Routing::Mapper.html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
+  - branch-castwide-master
 ActionDispatch::Routing::Mapper.in?:
   types:
   - Boolean
@@ -382,6 +386,8 @@ ActionDispatch::Routing::Mapper#duplicable?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
+  - branch-castwide-master
 ActionDispatch::Routing::Mapper#get:
   types:
   - undefined
@@ -399,6 +405,8 @@ ActionDispatch::Routing::Mapper#html_safe?:
   - 0.50.0
   - 0.51.2
   - 0.52.0
+  - 0.60.3
+  - branch-castwide-master
 ActionDispatch::Routing::Mapper#in?:
   types:
   - Boolean

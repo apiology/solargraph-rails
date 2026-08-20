@@ -23,6 +23,8 @@ class Definitions
     @congrats = []
 
     definitions.each do |meth, data|
+      next if rbs_too_old?(data)
+
       process_single_definition(meth, data)
     end
 
@@ -90,6 +92,17 @@ class Definitions
     return solargraph_force_ci_version if solargraph_force_ci_version
 
     Solargraph::VERSION
+  end
+
+  # Some declarations only take their current form from a given rbs onward -
+  # e.g. rbs 4.0 renamed Enumerable's type parameter from Elem to E.
+  def rbs_too_old?(data)
+    return false unless data['min_rbs']
+    return false unless defined?(RBS::VERSION)
+    return false unless Gem::Version.new(RBS::VERSION) < Gem::Version.new(data['min_rbs'])
+
+    @skipped += 1
+    true
   end
 
   def process_single_definition(meth, data)
