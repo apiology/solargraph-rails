@@ -88,6 +88,11 @@ jobs:
               rails-minor: "0"
             solargraph-version: "branch-castwide-master"
             run_coverage: true
+          - versions:
+              ruby: "4.1.0-preview1"
+              rails-major: "8"
+              rails-minor: "0"
+            solargraph-version: "branch-castwide-master"
       fail-fast: false
     steps:
       - uses: actions/checkout@v2
@@ -97,7 +102,8 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y libsqlite3-dev
 
-      - uses: ruby/setup-ruby@v1.286.0
+      # v1.329.0 is the first release with 4.1.0-preview1
+      - uses: ruby/setup-ruby@v1.329.0
         with:
           ruby-version: ${{ matrix.versions.ruby }}
           bundler: 2.5.23
