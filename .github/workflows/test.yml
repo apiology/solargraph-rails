@@ -81,6 +81,64 @@ jobs:
               rails-major: "7"
               rails-minor: "1"
             solargraph-version: "0.61.0"
+          # Rails 7.0 and 8.0 cover the full solargraph range; Rails 7.1
+          # keeps its oldest and newest installable solargraph, and Rails
+          # 7.2 adds the versions Ruby 3.0 cannot install
+          - versions:
+              ruby: "3.0"
+              rails-major: "7"
+              rails-minor: "1"
+            solargraph-version: "0.49.0"
+          - versions:
+              ruby: "3.0"
+              rails-major: "7"
+              rails-minor: "1"
+            solargraph-version: "0.50.0"
+          - versions:
+              ruby: "3.0"
+              rails-major: "7"
+              rails-minor: "1"
+            solargraph-version: "0.51.2"
+          - versions:
+              ruby: "3.0"
+              rails-major: "7"
+              rails-minor: "1"
+            solargraph-version: "0.52.0"
+          - versions:
+              ruby: "3.0"
+              rails-major: "7"
+              rails-minor: "1"
+            solargraph-version: "0.57.0"
+          - versions:
+              ruby: "3.1"
+              rails-major: "7"
+              rails-minor: "2"
+            solargraph-version: "0.49.0"
+          - versions:
+              ruby: "3.1"
+              rails-major: "7"
+              rails-minor: "2"
+            solargraph-version: "0.50.0"
+          - versions:
+              ruby: "3.1"
+              rails-major: "7"
+              rails-minor: "2"
+            solargraph-version: "0.51.2"
+          - versions:
+              ruby: "3.1"
+              rails-major: "7"
+              rails-minor: "2"
+            solargraph-version: "0.52.0"
+          - versions:
+              ruby: "3.1"
+              rails-major: "7"
+              rails-minor: "2"
+            solargraph-version: "0.57.0"
+          - versions:
+              ruby: "3.1"
+              rails-major: "7"
+              rails-minor: "2"
+            solargraph-version: "0.58.2"
         include:
           - versions:
               ruby: "3.2"
