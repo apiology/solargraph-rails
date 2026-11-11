@@ -206,7 +206,7 @@ jobs:
           bundle info rbs
           set -e
           bundle info yard
-          bundle exec rake spec # bundle exec rspec spec/solargraph-rails
+          bundle exec rspec spec/turbo_probe_spec.rb
         env:
           # Used in Gemfile/gemspec
           MATRIX_SOLARGRAPH_VERSION: ${{ matrix.solargraph-version }}
